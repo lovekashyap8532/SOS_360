@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Profile">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        tools:ignore="ContentDescription,RtlHardcoded,ImageContrastCheck" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:text="SOS360"
+        android:textColor="#fff"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+
+    <ImageView
+        android:src="@drawable/baseline_notification_add_24"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="330dp"/>
+
+    <ImageView
+        android:id="@+id/userprofilepic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingBottom="6dp"
+        android:src="@drawable/rndimg"
+        android:background="@drawable/profilepictureborder"
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="155dp"
+        android:textColor="#fff"
+        android:layout_below="@id/userprofilepic"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/profilelayout"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:cardElevation="20dp">
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/profilelayout"
+                android:padding="20dp">
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/useremail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:text="E-mail Address"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:background="@drawable/customedit_text"-->
+<!--                    android:drawableLeft="@drawable/baseline_email_24"-->
+<!--                    android:drawablePadding="8dp"-->
+<!--                    android:padding="10dp"/>-->
+
+                <TextView
+                    android:id="@+id/fathername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Father's Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/customedit_text"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/mothername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Mother's Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/customedit_text"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/alternativenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Alternative Number"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/customedit_text"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:inputType="number"
+                    android:drawablePadding="8dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Address"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/customedit_text"
+                    android:drawableLeft="@drawable/baseline_maps_home_work_24"
+                    android:drawablePadding="8dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/bloodgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Blood group"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/customedit_text"
+                    android:drawableLeft="@drawable/baseline_bloodgroup_24"
+                    android:drawablePadding="8dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/diseases"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Diseases"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/customedit_text"
+                    android:drawableLeft="@drawable/baseline_sick_24"
+                    android:drawablePadding="8dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/lastcheckup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Last Health Checkup"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/customedit_text"
+                    android:drawableLeft="@drawable/baseline_health_and_safety_24"
+                    android:drawablePadding="8dp"
+                    android:padding="10dp"/>
+
+
+                <Button
+                    android:id="@+id/editbutton"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/yellow"
+                    android:text="Edit your Profile"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

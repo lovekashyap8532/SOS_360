@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="720dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="@drawable/header_background"-->
+<!--        android:padding="12dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:text="SOS360"-->
+<!--            android:textColor="#fff"-->
+<!--            android:textSize="38sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/profilepictureborder"-->
+<!--            android:src="@drawable/profilepicture"-->
+<!--            android:padding="6dp"-->
+<!--            android:layout_marginLeft="330dp"/>-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="160dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+
+<!--        app:cardElevation="20dp"-->
+<!--        app:cardBackgroundColor="#2D2D2D"-->
+<!--        app:cardCornerRadius="30dp" >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="24dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:src="@drawable/baseline_perm_contact_calendar_24" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="160dp"-->
+<!--        android:layout_marginLeft="250dp"-->
+
+<!--        app:cardElevation="20dp"-->
+<!--        app:cardBackgroundColor="#2D2D2D"-->
+<!--        app:cardCornerRadius="30dp" >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="24dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:src="@drawable/baseline_health_and_safety_24" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="360dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+
+<!--        app:cardElevation="20dp"-->
+<!--        app:cardBackgroundColor="#2D2D2D"-->
+<!--        app:cardCornerRadius="30dp" >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="24dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:src="@drawable/baseline_history_24" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="360dp"-->
+<!--        android:layout_marginLeft="250dp"-->
+
+<!--        app:cardElevation="20dp"-->
+<!--        app:cardBackgroundColor="#2D2D2D"-->
+<!--        app:cardCornerRadius="30dp" >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="24dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:src="@drawable/feedback" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="560dp"-->
+<!--        android:layout_marginLeft="130dp"-->
+<!--        android:layout_marginRight="30dp"-->
+
+<!--        app:cardElevation="20dp"-->
+<!--        app:cardBackgroundColor="#2D2D2D"-->
+<!--        app:cardCornerRadius="30dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="24dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:src="@drawable/baseline_settings_24"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+</RelativeLayout>
