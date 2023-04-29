@@ -8,6 +8,10 @@
     tools:context=".Profile">
 
     <ImageView
+<<<<<<< HEAD
+=======
+        android:id="@+id/pback"
+>>>>>>> af4b6f0 (Sos360)
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginLeft="10dp"
@@ -37,13 +41,22 @@
 
     <ImageView
         android:id="@+id/userprofilepic"
+<<<<<<< HEAD
         android:layout_width="100dp"
         android:layout_height="100dp"
+=======
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+>>>>>>> af4b6f0 (Sos360)
         android:paddingBottom="6dp"
         android:src="@drawable/rndimg"
         android:background="@drawable/profilepictureborder"
         android:padding="10dp"
+<<<<<<< HEAD
         android:layout_marginTop="100dp"
+=======
+        android:layout_marginTop="60dp"
+>>>>>>> af4b6f0 (Sos360)
         android:layout_marginLeft="150dp"/>
 
     <TextView
@@ -61,7 +74,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="290dp"
+=======
+        android:layout_marginTop="210dp"
+>>>>>>> af4b6f0 (Sos360)
         android:background="@drawable/profilelayout"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
@@ -99,6 +116,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="Father's Name"
+<<<<<<< HEAD
+=======
+                    android:textColor="@color/black"
+>>>>>>> af4b6f0 (Sos360)
                     android:textSize="20sp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/customedit_text"
@@ -111,6 +132,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="Mother's Name"
+<<<<<<< HEAD
+=======
+                    android:textColor="@color/black"
+>>>>>>> af4b6f0 (Sos360)
                     android:textSize="20sp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/customedit_text"
@@ -124,6 +149,10 @@
                     android:layout_height="50dp"
                     android:text="Alternative Number"
                     android:textSize="20sp"
+<<<<<<< HEAD
+=======
+                    android:textColor="@color/black"
+>>>>>>> af4b6f0 (Sos360)
                     android:layout_marginTop="20dp"
                     android:background="@drawable/customedit_text"
                     android:drawableLeft="@drawable/baseline_local_phone_24"
@@ -137,6 +166,10 @@
                     android:layout_height="50dp"
                     android:text="Address"
                     android:textSize="20sp"
+<<<<<<< HEAD
+=======
+                    android:textColor="@color/black"
+>>>>>>> af4b6f0 (Sos360)
                     android:layout_marginTop="20dp"
                     android:background="@drawable/customedit_text"
                     android:drawableLeft="@drawable/baseline_maps_home_work_24"
@@ -149,6 +182,10 @@
                     android:layout_height="50dp"
                     android:text="Blood group"
                     android:layout_marginTop="20dp"
+<<<<<<< HEAD
+=======
+                    android:textColor="@color/black"
+>>>>>>> af4b6f0 (Sos360)
                     android:textSize="20sp"
                     android:background="@drawable/customedit_text"
                     android:drawableLeft="@drawable/baseline_bloodgroup_24"
@@ -161,6 +198,10 @@
                     android:layout_height="50dp"
                     android:text="Diseases"
                     android:textSize="20sp"
+<<<<<<< HEAD
+=======
+                    android:textColor="@color/black"
+>>>>>>> af4b6f0 (Sos360)
                     android:layout_marginTop="20dp"
                     android:background="@drawable/customedit_text"
                     android:drawableLeft="@drawable/baseline_sick_24"
@@ -171,6 +212,10 @@
                     android:id="@+id/lastcheckup"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+<<<<<<< HEAD
+=======
+                    android:textColor="@color/black"
+>>>>>>> af4b6f0 (Sos360)
                     android:text="Last Health Checkup"
                     android:textSize="20sp"
                     android:layout_marginTop="20dp"
@@ -181,13 +226,21 @@
 
 
                 <Button
+<<<<<<< HEAD
                     android:id="@+id/editbutton"
+=======
+                    android:id="@+id/logout"
+>>>>>>> af4b6f0 (Sos360)
                     android:layout_width="250dp"
                     android:layout_height="60dp"
                     android:layout_marginTop="15dp"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/yellow"
+<<<<<<< HEAD
                     android:text="Edit your Profile"
+=======
+                    android:text="Logout"
+>>>>>>> af4b6f0 (Sos360)
                     android:textColor="#fff"
                     android:textSize="20sp"
                     android:textStyle="bold"

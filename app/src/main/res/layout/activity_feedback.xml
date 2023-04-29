@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/feedback_header"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:text="Feedback"
+            android:textColor="#fff"
+            android:textSize="36sp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you think of our app?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/anger"
+        tools:ignore="ContentDescription"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/sad"
+        android:layout_marginLeft="100dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ok"
+        android:layout_marginLeft="180dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/happy"
+        android:layout_marginLeft="260dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/glad"
+        android:layout_marginLeft="340dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What would you like to share with us?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editbox"
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/text2"
+        android:hint="Your thoughts......."
+        android:gravity="start"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/customedit_text"/>
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="652dp"
+        android:background="@drawable/feedback_header">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Powered by"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="130dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="28dp"
+            android:text="SOS360"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
