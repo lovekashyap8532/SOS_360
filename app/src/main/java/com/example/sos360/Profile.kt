@@ -7,7 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.squareup.picasso.Picasso
 
 class Profile : AppCompatActivity() {
@@ -81,7 +85,7 @@ class Profile : AppCompatActivity() {
             }
         })
 
-        val editbutton = findViewById<TextView>(R.id.editbutton)
+        val editbutton = findViewById<TextView>(R.id.logout)
         editbutton.setOnClickListener {
             val intent = Intent(this,Myinfo::class.java)
             startActivity(intent)
