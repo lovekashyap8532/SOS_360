@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="260dp"
+        android:layout_marginLeft="200dp"
         android:layout_marginTop="20dp"
         android:text="SOS360"
         android:textColor="#1ACEFB"

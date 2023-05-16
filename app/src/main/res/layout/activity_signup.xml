@@ -43,7 +43,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="250dp"
+        android:layout_marginLeft="200dp"
         android:layout_marginTop="20dp"
         android:text="SOS360"
         android:textColor="#1ACEFB"
@@ -51,6 +51,9 @@
         android:textStyle="bold"
         tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck"
         />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -167,7 +170,7 @@
 
     </androidx.cardview.widget.CardView>
 
-
+    </ScrollView>
 
 
 </RelativeLayout>

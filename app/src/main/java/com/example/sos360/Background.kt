@@ -256,6 +256,7 @@ class Background : Service(), SensorEventListener, LocationListener {
         // Not implemented
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {
         // Not implemented
     }

@@ -34,7 +34,7 @@ class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-        val userId = FirebaseAuth.getInstance().currentUser!!.uid
+        val userId = FirebaseAuth.getInstance().currentUser?.uid
 
         databaseReference = FirebaseDatabase.getInstance().getReference("SOS360/$userId")
         databaseReference.addValueEventListener(object : ValueEventListener {
@@ -85,9 +85,14 @@ class Profile : AppCompatActivity() {
             }
         })
 
-        val editbutton = findViewById<TextView>(R.id.logout)
-        editbutton.setOnClickListener {
-            val intent = Intent(this,Myinfo::class.java)
+        val logoutbutton = findViewById<TextView>(R.id.logout)
+        logoutbutton.setOnClickListener {
+            val intent = Intent(this,Login::class.java)
+            startActivity(intent)
+        }
+        val pback = findViewById<ImageView>(R.id.pback)
+        pback.setOnClickListener {
+            val intent = Intent(this,Home::class.java)
             startActivity(intent)
         }
     }

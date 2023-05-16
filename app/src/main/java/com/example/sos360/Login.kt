@@ -45,7 +45,7 @@ class Login : AppCompatActivity() {
                             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
 
                             // Redirect to HomeActivity
-                            val intent = Intent(this, Profile::class.java)
+                            val intent = Intent(this, Home::class.java)
                             startActivity(intent)
                             finish()
                         } else {

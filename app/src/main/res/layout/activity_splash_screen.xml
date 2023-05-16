@@ -8,47 +8,15 @@
     android:background="@drawable/sosbg">
 
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:text="SOS 360"
-        android:textColor="@color/red"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="307dp"
-        android:layout_height="67dp"
-        android:gravity="center"
-        android:text="Comfort you Ride with UniRide"
-        android:textColor="@color/red"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
-
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="357dp"
-        android:layout_height="236dp"
+        android:layout_width="420dp"
+        android:layout_height="302dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/rndimg"
-        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.448"
+        app:srcCompat="@drawable/sossplshbg"
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

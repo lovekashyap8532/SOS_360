@@ -8,149 +8,6 @@
     tools:context=".Home">
 
     <RelativeLayout
-        android:layout_width="720dp"
-        android:layout_height="80dp"
-        android:background="@drawable/header_background"
-        android:padding="12dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="SOS360"
-            android:textColor="#fff"
-            android:textSize="38sp"
-            android:textStyle="bold" />
-
-<!--        <ImageView-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:background="@drawable/profilepictureborder"-->
-<!--            android:padding="6dp"-->
-<!--            android:layout_marginLeft="330dp"/>-->
-
-
-    </RelativeLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginLeft="30dp"
-
-        app:cardElevation="20dp"
-        app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/baseline_perm_contact_calendar_24" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginLeft="250dp"
-
-        app:cardElevation="20dp"
-        app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/baseline_health_and_safety_24" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-
-        app:cardElevation="20dp"
-        app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/baseline_history_24" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="250dp"
-
-        app:cardElevation="20dp"
-        app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/sosfeedback" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="560dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginRight="30dp"
-
-        app:cardElevation="20dp"
-        app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/baseline_settings_24"/>
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-
-
-    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/header_background"
@@ -159,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:text="SOS360"
             android:gravity="center"
             android:textColor="#fff"
@@ -167,7 +24,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/user_profile"
+            android:id="@+id/homeprofile"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/profilepictureborder"
@@ -181,194 +38,184 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginLeft="30dp"
-        app:cardElevation="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="2dp"
         app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
         <LinearLayout
             android:id="@+id/contacts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/baseline_perm_contact_calendar_24" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="28dp"-->
-<!--        android:layout_marginTop="43dp"-->
-<!--        android:layout_marginEnd="247dp"-->
-<!--        android:layout_marginBottom="409dp"-->
-<!--        android:gravity="center"-->
-<!--        android:text="Contacts"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="25sp" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="Contacts"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginLeft="250dp"
-
-        app:cardElevation="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
         app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
         <LinearLayout
             android:id="@+id/tips"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/baseline_health_and_safety_24" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="247dp"-->
-<!--        android:layout_marginTop="43dp"-->
-<!--        android:layout_marginEnd="28dp"-->
-<!--        android:layout_marginBottom="409dp"-->
-<!--        android:gravity="center"-->
-<!--        android:text="Safety Tips"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="25sp" />-->
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="39dp"
+        android:gravity="center"
+        android:text="Safety Tips"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-
-        app:cardElevation="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="260dp"
         app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
         <LinearLayout
-            android:id="@+id/history"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:id="@+id/chistory"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/baseline_history_24" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="27dp"-->
-<!--        android:layout_marginTop="43dp"-->
-<!--        android:layout_marginEnd="248dp"-->
-<!--        android:layout_marginBottom="208dp"-->
-<!--        android:gravity="center"-->
-<!--        android:text="History"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="25sp" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="361dp"
+        android:gravity="center"
+        android:text="History"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="250dp"
-
-        app:cardElevation="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="40dp"
         app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp" >
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
         <LinearLayout
-            android:id="@+id/feedback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:id="@+id/homefeedback"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/sosfeedback" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="249dp"-->
-<!--        android:layout_marginTop="43dp"-->
-<!--        android:layout_marginEnd="26dp"-->
-<!--        android:layout_marginBottom="208dp"-->
-<!--        android:gravity="center"-->
-<!--        android:text="Feedback"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="25sp" />-->
+    <TextView
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="42dp"
+        android:gravity="center"
+        android:text="Feedback"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="130dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="560dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginRight="30dp"
-
-        app:cardElevation="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="420dp"
         app:cardBackgroundColor="#2D2D2D"
-        app:cardCornerRadius="30dp">
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
         <LinearLayout
             android:id="@+id/settings"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/baseline_settings_24"/>
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/baseline_settings_24" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="127dp"-->
-<!--        android:layout_marginTop="43dp"-->
-<!--        android:layout_marginEnd="148dp"-->
-<!--        android:layout_marginBottom="9dp"-->
-<!--        android:gravity="center"-->
-<!--        android:text="Settings"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="25sp" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="520dp"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </RelativeLayout>
