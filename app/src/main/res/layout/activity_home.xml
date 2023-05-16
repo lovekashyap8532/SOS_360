@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".Home">
 
 <!--    <RelativeLayout-->
@@ -151,9 +150,6 @@
 <!--    </androidx.cardview.widget.CardView>-->
 
 
-=======
-    android:background="@drawable/sosbg"
-    tools:context=".Home">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -376,6 +372,5 @@
         android:text="Settings"
         android:textColor="@color/black"
         android:textSize="25sp" />
->>>>>>> af4b6f0 (Sos360)
 
 </RelativeLayout>
