@@ -26,7 +26,6 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import kotlin.math.abs
 
-
 class Background : Service(), SensorEventListener, LocationListener {
     private var sensorManager: SensorManager? = null
     private var accelerometer: Sensor? = null
@@ -63,7 +62,6 @@ class Background : Service(), SensorEventListener, LocationListener {
         return null
     }
 
-
     override fun onCreate() {
         super.onCreate()
 
@@ -74,8 +72,7 @@ class Background : Service(), SensorEventListener, LocationListener {
         if (accelerometer == null) {
             Log.e(TAG, "Accelerometer sensor not found")
         } else {
-            sensorManager!!.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL
-            )
+            sensorManager!!.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL)
         }
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -115,8 +112,6 @@ class Background : Service(), SensorEventListener, LocationListener {
                         makePhoneCall()
 //                        notificationManager.cancel(NOTIFICATION_ID)
                         stopForeground(true)
-
-
                     }
                     ACTION_CANCEL -> {
                         Toast.makeText(applicationContext, "It is Cancel", Toast.LENGTH_SHORT).show()
@@ -129,7 +124,6 @@ class Background : Service(), SensorEventListener, LocationListener {
                         notificationManager.cancel(NOTIFICATION_ID)
                         // Stop the foreground service
                         stopForeground(true)
-//                        stopSelf()
                     }
                 }
             }
@@ -146,31 +140,46 @@ class Background : Service(), SensorEventListener, LocationListener {
             notificationManager.createNotificationChannel(channel)
         }
 
+        // Build the notification with PendingIntent.FLAG_IMMUTABLE for Android 12+
+        val pendingIntentOk = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            PendingIntent.getBroadcast(
+                this,
+                0,
+                Intent(ACTION_OK),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        } else {
+            PendingIntent.getBroadcast(
+                this,
+                0,
+                Intent(ACTION_OK),
+                PendingIntent.FLAG_UPDATE_CURRENT
+            )
+        }
+
+        val pendingIntentCancel = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            PendingIntent.getBroadcast(
+                this,
+                0,
+                Intent(ACTION_CANCEL),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        } else {
+            PendingIntent.getBroadcast(
+                this,
+                0,
+                Intent(ACTION_CANCEL),
+                PendingIntent.FLAG_UPDATE_CURRENT
+            )
+        }
+
         // Build the notification
         notification = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
             .setContentTitle("Motion Detected")
             .setContentText("If this is false alarm then click on CANCEL ")
             .setSmallIcon(R.mipmap.ic_launcher)
-            .addAction(
-                R.mipmap.ic_launcher,
-                "OK",
-                PendingIntent.getBroadcast(
-                    this,
-                    0,
-                    Intent(ACTION_OK),
-                    PendingIntent.FLAG_UPDATE_CURRENT
-                )
-            )
-            .addAction(
-                R.mipmap.ic_launcher,
-                "CANCEL",
-                PendingIntent.getBroadcast(
-                    this,
-                    0,
-                    Intent(ACTION_CANCEL),
-                    PendingIntent.FLAG_UPDATE_CURRENT
-                )
-            )
+            .addAction(R.mipmap.ic_launcher, "OK", pendingIntentOk)
+            .addAction(R.mipmap.ic_launcher, "CANCEL", pendingIntentCancel)
             .build()
 
         // Start the service in the foreground
@@ -182,30 +191,17 @@ class Background : Service(), SensorEventListener, LocationListener {
         registerReceiver(broadcastReceiver, filter)
         filter.addAction(ACTION_CANCEL)
         registerReceiver(broadcastReceiver, filter)
-
-
-//        onDestroy()
-//        super.onDestroy()
-//        unregisterReceiver(broadcastReceiver)
-
     }
-
 
     override fun onDestroy() {
         super.onDestroy()
-        val filter = IntentFilter()
-        filter.addAction(ACTION_OK)
-        unregisterReceiver(broadcastReceiver)
-        filter.addAction(ACTION_CANCEL)
         unregisterReceiver(broadcastReceiver)
         sensorManager?.unregisterListener(this)
         locationManager?.removeUpdates(this)
-//        unregisterReceiver(broadcastReceiver)
         stopClicked = true
         stopForeground(true)
         stopSelf()
     }
-
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         return START_STICKY
@@ -222,8 +218,7 @@ class Background : Service(), SensorEventListener, LocationListener {
                 val y = event.values[1]
                 val z = event.values[2]
 
-                val speed =
-                    abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000
+                val speed = abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000
 
                 if (speed > MOTION_THRESHOLD) {
                     Log.e(TAG, "Motion Motion")
@@ -269,6 +264,7 @@ class Background : Service(), SensorEventListener, LocationListener {
         ) {
             val intent = Intent(Intent.ACTION_CALL)
             intent.data = Uri.parse("tel:" + phoneNumbers[0])
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // Add this line
             startActivity(intent)
         }
     }
